@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMLWeb", "JMLWeb\JMLWeb.csproj", "{C0590585-EAF2-4CD8-B2BA-FDC617657DAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JMLWeb.Tests", "JMLWeb.Tests\JMLWeb.Tests.csproj", "{134516F9-D8E5-415E-83B4-6D7B28192F64}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0590585-EAF2-4CD8-B2BA-FDC617657DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0590585-EAF2-4CD8-B2BA-FDC617657DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0590585-EAF2-4CD8-B2BA-FDC617657DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0590585-EAF2-4CD8-B2BA-FDC617657DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{134516F9-D8E5-415E-83B4-6D7B28192F64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134516F9-D8E5-415E-83B4-6D7B28192F64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134516F9-D8E5-415E-83B4-6D7B28192F64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134516F9-D8E5-415E-83B4-6D7B28192F64}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
