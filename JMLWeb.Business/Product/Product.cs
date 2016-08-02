@@ -2,6 +2,12 @@
 {
     public partial class Product : BaseProduct
     {
+        public Product()
+            : base()
+        {
+
+        }
+
         public Product(string name, decimal price)
             : base(name, price)
         {
@@ -19,6 +25,11 @@
 
 
         #region Constructors
+        public BaseProduct()
+            : base()
+        {
+        }
+
         public BaseProduct(string name, decimal price)
             : base()
         {

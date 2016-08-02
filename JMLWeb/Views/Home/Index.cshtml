@@ -1,16 +1,19 @@
 ﻿@using JMLWeb.ViewModels
+@using JMLWeb.Business.Product;
 
 @{
     ViewBag.Title = "Home Page";
 }
 
-@model ProductViewModel
+@model ProductsViewModel
 <div class="row">
-    <div class="col-md-4">
-        <h2>@Model.Product.Name</h2>
-        <p>
-            @Model.Product.Price.ToString("C")
-        </p>
-    </div>
-    
+    @foreach (Product p in Model.Products)
+    {
+        <div class="col-md-4">
+            <h2>@p.Name</h2>
+            <p>
+                @p.Price.ToString("C")
+            </p>
+        </div>
+    }
 </div>

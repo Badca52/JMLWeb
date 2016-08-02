@@ -265,6 +265,10 @@
       <Project>{53a98e3f-a48f-4f48-81ca-ff547c8910c6}</Project>
       <Name>JMLWeb.Controllers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JMLWeb.DataAccess\JMLWeb.DataAccess.csproj">
+      <Project>{F0AB1649-FC9F-4273-80D3-CEBA86EE78F8}</Project>
+      <Name>JMLWeb.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\JMLWeb.ViewModels\JMLWeb.ViewModels.csproj">
       <Project>{977D5DEC-DB02-4677-9B9E-A2577B613A7A}</Project>
       <Name>JMLWeb.ViewModels</Name>

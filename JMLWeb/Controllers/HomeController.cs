@@ -1,5 +1,6 @@
-﻿using JMLWeb.Business.Product;
+﻿using JMLWeb.DataAccess;
 using JMLWeb.ViewModels;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace JMLWeb.Controllers
@@ -8,9 +9,13 @@ namespace JMLWeb.Controllers
     {
         public ActionResult Index()
         {
-            Product p = new Product("Jeff's Product", 3.95m);
-            ProductViewModel vw = new ProductViewModel();
-            vw.Product = p;
+            ProductsViewModel vw = new ProductsViewModel();
+
+            using (DataContext db = new DataContext())
+            {
+                vw.Products = db.Products.ToList();
+            }
+
             return View("Index", vw);
         }
 
