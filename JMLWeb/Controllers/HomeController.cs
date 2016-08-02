@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using JMLWeb.Business.Product;
+using JMLWeb.ViewModels;
 using System.Web.Mvc;
 
 namespace JMLWeb.Controllers
@@ -10,7 +8,10 @@ namespace JMLWeb.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            Product p = new Product("Jeff's Product", 3.95m);
+            ProductViewModel vw = new ProductViewModel();
+            vw.Product = p;
+            return View("Index", vw);
         }
 
         public ActionResult About()

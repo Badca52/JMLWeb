@@ -256,6 +256,20 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JMLWeb.Business\JMLWeb.Business.csproj">
+      <Project>{0297ac1d-6391-49bb-8357-0cac5b706935}</Project>
+      <Name>JMLWeb.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JMLWeb.Controllers\JMLWeb.Controllers.csproj">
+      <Project>{53a98e3f-a48f-4f48-81ca-ff547c8910c6}</Project>
+      <Name>JMLWeb.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JMLWeb.ViewModels\JMLWeb.ViewModels.csproj">
+      <Project>{977D5DEC-DB02-4677-9B9E-A2577B613A7A}</Project>
+      <Name>JMLWeb.ViewModels</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
